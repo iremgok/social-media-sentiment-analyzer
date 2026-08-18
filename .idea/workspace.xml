@@ -4,44 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df60d77b-052e-4b4c-897b-64911dbf41b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/social_media_sentiment_analyzer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/core/logging.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/db/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/db/session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/nlp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/nlp/preprocessor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/nlp/sentiment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/nlp/summarizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/schemas/analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/schemas/scraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/scrapers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/scrapers/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/scrapers/reddit_scraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/scrapers/twitter_scraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/v1/endpoints/analyze.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/v1/endpoints/health.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/v1/endpoints/scrape.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/v1/router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dashboard/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dashboard/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/test_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/test_nlp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/test_scrapers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="df60d77b-052e-4b4c-897b-64911dbf41b2" name="Changes" comment="initialize project structure and add text preprocessor">
+      <change beforePath="$PROJECT_DIR$/app/api/nlp/sentiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/nlp/sentiment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "iremgok"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/iremgok/social_media_sentiment_analyzer.git",
+    "accountId": "bbf4ac1d-2d9c-403d-84f9-4dd3e0060474"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -123,6 +99,19 @@
       <option name="presentableId" value="Default" />
       <updated>1787053695529</updated>
     </task>
+    <task id="LOCAL-00001" summary="initialize project structure and add text preprocessor">
+      <option name="closed" value="true" />
+      <created>1787055702312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1787055702312</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initialize project structure and add text preprocessor" />
+    <option name="LAST_COMMIT_MESSAGE" value="initialize project structure and add text preprocessor" />
   </component>
 </project>
