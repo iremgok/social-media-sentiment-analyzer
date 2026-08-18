@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df60d77b-052e-4b4c-897b-64911dbf41b2" name="Changes" comment="initialize project structure and add text preprocessor">
-      <change beforePath="$PROJECT_DIR$/app/api/nlp/sentiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/nlp/sentiment.py" afterDir="false" />
+    <list default="true" id="df60d77b-052e-4b4c-897b-64911dbf41b2" name="Changes" comment="implement batch sentiment analysis">
+      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/core/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/core/logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/db/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/db/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/nlp/summarizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/nlp/summarizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/schemas/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/schemas/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/scrapers/reddit_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/scrapers/reddit_scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +59,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.preprocessor.executor": "Debug",
+    "Python.preprocessor.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -107,11 +118,20 @@
       <option name="project" value="LOCAL" />
       <updated>1787055702312</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implement batch sentiment analysis">
+      <option name="closed" value="true" />
+      <created>1787058700949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1787058700949</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize project structure and add text preprocessor" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize project structure and add text preprocessor" />
+    <MESSAGE value="implement batch sentiment analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement batch sentiment analysis" />
   </component>
 </project>

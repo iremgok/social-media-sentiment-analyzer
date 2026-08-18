@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  # 1. Servis: FastAPI Backend (Port 8000)
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sentiment_analyzer_api
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  # 2. Servis: Streamlit Dashboard (Port 8501)
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sentiment_analyzer_dashboard
+    command: streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://backend:8000/api/v1/analyze
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - backend
+    restart: unless-stopped
