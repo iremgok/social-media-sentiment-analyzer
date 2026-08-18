@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df60d77b-052e-4b4c-897b-64911dbf41b2" name="Changes" comment="implement batch sentiment analysis">
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/core/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/core/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/core/logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/db/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/db/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/nlp/summarizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/nlp/summarizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/schemas/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/schemas/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/scrapers/reddit_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/scrapers/reddit_scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="df60d77b-052e-4b4c-897b-64911dbf41b2" name="Changes" comment="implement all files">
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +22,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "iremgok"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;iremgok&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/iremgok/social_media_sentiment_analyzer.git",
-    "accountId": "bbf4ac1d-2d9c-403d-84f9-4dd3e0060474"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/iremgok/social_media_sentiment_analyzer.git&quot;,
+    &quot;accountId&quot;: &quot;bbf4ac1d-2d9c-403d-84f9-4dd3e0060474&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3I5TzvgeSNnEa2OrHRKeTGzc8EN" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,16 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.preprocessor.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.preprocessor.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="preprocessor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="social_media_sentiment_analyzer" />
@@ -126,12 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1787058700949</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implement all files">
+      <option name="closed" value="true" />
+      <created>1787059414792</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1787059414792</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize project structure and add text preprocessor" />
     <MESSAGE value="implement batch sentiment analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement batch sentiment analysis" />
+    <MESSAGE value="implement all files" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement all files" />
   </component>
 </project>
