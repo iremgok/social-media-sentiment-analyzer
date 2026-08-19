@@ -39,8 +39,8 @@ class TextPreprocessor:
         return text
 
     def clean_batch(self, texts: list[str]) -> list[str]:
-        """Birden fazla metni liste halinde temizler."""
-        return [self.clean(t) for t in texts if self.clean(t)]
+        """Birden fazla metni liste halinde temizler (boyut hizalamasını korur)."""
+        return [self.clean(t) for t in texts]
 
 
 

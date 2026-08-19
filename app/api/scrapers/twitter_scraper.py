@@ -1,6 +1,6 @@
 from typing import List, Dict, Optional
-from app.scrapers.base import BaseScraper
-from app.core.logging import logger
+from app.api.scrapers.base import BaseScraper
+from app.api.core.logging import logger
 
 
 class TwitterScraper(BaseScraper):

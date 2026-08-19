@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float, DateTime, Text, ForeignKey
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from app.db.session import Base
+from app.api.db.session import Base
 
 
 class SearchQuery(Base):

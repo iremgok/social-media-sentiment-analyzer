@@ -3,8 +3,8 @@ from pydantic import BaseModel, Field
 
 
 class AnalysisRequest(BaseModel):
-    query: str = Field(..., example="iPhone 15", description="Aranacak ürün, marka veya konu başlığı")
-    platform: str = Field(default="reddit", example="reddit", description="Hedef platform")
+    query: str = Field(..., json_schema_extra={"example": "iPhone 15"}, description="Aranacak ürün, marka veya konu başlığı")
+    platform: str = Field(default="reddit", json_schema_extra={"example": "reddit"}, description="Hedef platform")
     limit: int = Field(default=20, ge=1, le=100, description="Çekilecek maksimum yorum sayısı (1-100)")
 
 

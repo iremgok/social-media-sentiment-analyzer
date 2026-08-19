@@ -1,8 +1,9 @@
 from typing import Dict, List, Optional
 import praw
+from app.api.scrapers.base import BaseScraper
 
 
-class RedditScraper:
+class RedditScraper(BaseScraper):
     """
     Reddit üzerinden belirli bir anahtar kelimeye veya
     subreddit'e ait gönderi ve yorumları toplayan sınıf.

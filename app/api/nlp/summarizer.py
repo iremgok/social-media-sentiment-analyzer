@@ -1,40 +1,44 @@
 from typing import Dict, List
-from transformers import pipeline
 import torch
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 
 class TextSummarizer:
     """
-    Hafif açık kaynak modeller (DistilBART) kullanarak
-    toplanan yorumlardan ana fikirleri özetleyen sınıf.
+    AutoModelForSeq2SeqLM kullanarak özetleme yapan sınıf.
+    Pipeline registry hatalarını tamamen engeller.
     """
 
     def __init__(self, model_name: str = "sshleifer/distilbart-cnn-12-6"):
-        self.device = 0 if torch.cuda.is_available() else -1
-        print(f"Özetleme modeli yükleniyor: {model_name} (Device: {'GPU' if self.device == 0 else 'CPU'})")
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        print(f"Özetleme modeli yükleniyor: {model_name} (Device: {self.device})")
 
-        self.summarizer = pipeline(
-            "summarization",
-            model=model_name,
-            tokenizer=model_name,
-            device=self.device
-        )
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(self.device)
 
     def summarize_text(self, text: str, max_length: int = 60, min_length: int = 15) -> str:
         """Uzun bir metin bloğunu özetler."""
         if not text or len(text.split()) < 15:
-            # Metin çok kısaysa modeli yormadan direkt metni döndür
-            return text.strip()
+            return text.strip() if text else ""
 
         try:
-            summary = self.summarizer(
+            inputs = self.tokenizer(
                 text,
+                max_length=1024,
+                truncation=True,
+                return_tensors="pt"
+            ).to(self.device)
+
+            summary_ids = self.model.generate(
+                inputs["input_ids"],
+                num_beams=4,
                 max_length=max_length,
                 min_length=min_length,
-                do_sample=False,
-                truncation=True
+                early_stopping=True,
+                no_repeat_ngram_size=3
             )
-            return summary[0]["summary_text"].strip()
+
+            return self.tokenizer.decode(summary_ids[0], skip_special_tokens=True).strip()
         except Exception as e:
             return f"Özet çıkarılamadı: {str(e)}"
 
@@ -49,7 +53,6 @@ class TextSummarizer:
         positives = [item["text"] for item in comments_with_sentiment if item.get("label") == "positive"]
         negatives = [item["text"] for item in comments_with_sentiment if item.get("label") == "negative"]
 
-        # En fazla ilk 10 yorumu birleştirerek context limitini aşmayı engelle
         pos_blob = " ".join(positives[:10])
         neg_blob = " ".join(negatives[:10])
 
@@ -62,18 +65,11 @@ class TextSummarizer:
         }
 
 
-# --- TEST BLOĞU (Girintisiz, en solda) ---
 if __name__ == "__main__":
     summarizer = TextSummarizer()
-
-    sample_feedbacks = [
-        {"text": "The camera quality on this device is stunning, crystal clear night shots.", "label": "positive"},
-        {"text": "Screen colors and 120Hz refresh rate make everything feel super smooth.", "label": "positive"},
-        {"text": "Battery drains in less than 5 hours of moderate use, very disappointed.", "label": "negative"},
-        {"text": "Device gets dangerously hot while charging and playing games.", "label": "negative"}
-    ]
-
-    print("\n--- Özetleme Sonucu ---")
-    summaries = summarizer.summarize_feedback_by_sentiment(sample_feedbacks)
-    print("Pozitif Noktalar:", summaries["positive_summary"])
-    print("Negatif Şikayetler:", summaries["negative_summary"])
+    test_text = (
+        "The battery life of this smartphone is really amazing and lasts two full days. "
+        "The screen colors are very sharp and vibrant. The camera takes stunning pictures at night. "
+        "However, charging is somewhat slow."
+    )
+    print("Özet:", summarizer.summarize_text(test_text))

@@ -3,7 +3,7 @@ from typing import Optional
 
 
 class ScrapeRequest(BaseModel):
-    query: str = Field(..., min_length=2, example="PlayStation 5")
+    query: str = Field(..., min_length=2, json_schema_extra={"example": "PlayStation 5"})
     limit: int = Field(default=20, ge=1, le=100)
 
 

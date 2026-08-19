@@ -4,8 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df60d77b-052e-4b4c-897b-64911dbf41b2" name="Changes" comment="implement all files">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="df60d77b-052e-4b4c-897b-64911dbf41b2" name="Changes" comment="implement requirements file">
+      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/db/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/db/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/db/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/nlp/preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/nlp/preprocessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/nlp/summarizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/nlp/summarizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/schemas/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/schemas/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/schemas/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/schemas/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/scrapers/reddit_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/scrapers/reddit_scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/scrapers/twitter_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/scrapers/twitter_scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/v1/endpoints/analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/v1/endpoints/analyze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/v1/endpoints/health.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/v1/endpoints/health.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/v1/endpoints/scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/v1/endpoints/scrape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/test_nlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/test_nlp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/test_scrapers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/test_scrapers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,13 +142,22 @@
       <option name="project" value="LOCAL" />
       <updated>1787059414792</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implement requirements file">
+      <option name="closed" value="true" />
+      <created>1787059697279</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1787059697279</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize project structure and add text preprocessor" />
     <MESSAGE value="implement batch sentiment analysis" />
     <MESSAGE value="implement all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement all files" />
+    <MESSAGE value="implement requirements file" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement requirements file" />
   </component>
 </project>

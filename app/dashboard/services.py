@@ -16,7 +16,9 @@ class AnalyticsService:
         try:
             response = requests.post(BACKEND_URL, json=payload, timeout=60)
             if response.status_code == 200:
+                # Sadece JSON verisini (sözlük/dict) dönüyoruz
                 return response.json()
             return None
-        except requests.exceptions.RequestException:
+        except requests.exceptions.RequestException as e:
+            print(f"Baglanti Hatasi: {e}")
             return None

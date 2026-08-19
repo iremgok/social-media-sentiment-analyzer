@@ -1,5 +1,5 @@
-from app.scrapers.reddit_scraper import RedditScraper
-from app.scrapers.twitter_scraper import TwitterScraper
+from app.api.scrapers.reddit_scraper import RedditScraper
+from app.api.scrapers.twitter_scraper import TwitterScraper
 
 
 def test_reddit_mock_fallback():
